@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="1fe80552-b093-4381-995c-c7f48cd74553" name="Playground" linkedPackageId="84474219-495b-471b-b0bc-071b58a63c6d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="31b46fec-5ba7-428c-8c13-220accd8472c">
+      <profileInstance Id="417b09f8-b71a-47c2-8713-cdbfdc9b347b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a8af3d68-585f-4a2d-a3d6-e32906696daf">
+      <profileInstance Id="3672e173-467a-4bbf-9363-45008c9c253c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca39772f-d004-47db-af9a-9b4055db2f85" name="GM" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23614563-8815-4eef-b3c2-ee6598d2b50b" />
+        <targetEnds>
+          <association Id="b69767c1-fa5e-4306-bd4c-ecb5b57dedd5" isDerived="false" sourceEndRoleName="GM" targetEndRoleName="Show hidden Items" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a5c7e6a7-aab0-438a-9072-50a8408728f0" LastKnownName="Show hidden Items" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b795660-a888-4e36-a6a8-57697c31225c" name="GM" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2c043f80-4e95-451a-b953-c4db8cbd01c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e825a962-299c-4eb0-a707-d62965307015" name="Show hidden Items" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f26fd8b-ed0f-4eaa-8823-619ca5269216" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7851f9d7-ec1c-4667-8b1f-0932fd6f78bc" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4cfd4b60-04c1-48b5-a4e6-c34acb56d8b5" name="Players" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f50a3de9-0c9c-4108-ad0d-897734ce1504" />
+        <targetEnds>
+          <association Id="b0ecd25a-9c00-4248-847e-264a32ec8ff3" isDerived="false" sourceEndRoleName="Players" targetEndRoleName="Only show visible areas" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="db517239-2252-4922-84cc-23028a56bba8" LastKnownName="Only show visible areas" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd831dca-1ffe-4b68-a01e-bbe3180ff2a5" name="Players" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="51350ad8-1265-4973-b656-6eb90d073c85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79b2dc0d-cb15-4fdc-97f3-4c162cf3770a" name="Only show visible areas" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ea57f92a-eef4-4ae9-a708-46a399e14592" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a8d890c-74ec-409b-8462-dc6bfd445bc0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="bbb9e6e0-dd25-4f19-9a93-e1dfeb1ac4a3" name="Image Viewer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="10ecaa00-0173-4093-a52f-89e0b4fdcd47" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a76c5345-886b-41d0-a954-2c85da1e8f54" name="Show Map" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="72981700-a375-41c2-9f53-5e14a567e7b8" />
+        <subjects>
+          <subsystemMoniker Id="bbb9e6e0-dd25-4f19-9a93-e1dfeb1ac4a3" LastKnownName="Image Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a5c7e6a7-aab0-438a-9072-50a8408728f0" name="Show hidden Items" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0b5e9e6-3321-4b1c-bac4-6ed2ab39a39c" />
+        <extendedCases>
+          <extend Id="2fc83cab-501e-4e7a-863a-b23e2558cb79">
+            <useCaseMoniker Id="a76c5345-886b-41d0-a954-2c85da1e8f54" LastKnownName="Show Map" />
+            <elementDefinition Id="5a0d2a28-3eb7-403e-be5d-016988610ade" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="bbb9e6e0-dd25-4f19-9a93-e1dfeb1ac4a3" LastKnownName="Image Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="db517239-2252-4922-84cc-23028a56bba8" name="Only show visible areas" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6568c661-c346-43c3-bac2-67b38bd3c34b" />
+        <extendedCases>
+          <extend Id="afbea81e-3352-412e-bbf2-147fc69a33bf">
+            <useCaseMoniker Id="a76c5345-886b-41d0-a954-2c85da1e8f54" LastKnownName="Show Map" />
+            <elementDefinition Id="64304c56-39cb-4e53-9cb1-4cd1fb300b14" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="bbb9e6e0-dd25-4f19-9a93-e1dfeb1ac4a3" LastKnownName="Image Viewer" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="84474219-495b-471b-b0bc-071b58a63c6d" name="SMModels">
+    <elementDefinition Id="171602e0-119a-4009-ab27-5883d16b993c" />
+  </package>
+</useCaseModelRoot>

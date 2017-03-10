@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="8c4d5f75-61c2-4557-b6bf-b93cfbb912a5"
+  name="Organizational" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c476d1c0-5925-4b9f-933d-70a3918e8de1"
+        name="ActorList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f755eba7-0dd1-4e8e-82c0-a33efdf82a0e"
+            isDerived="false"
+            sourceEndRoleName="Actors"
+            targetEndRoleName="Actor"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="5542be37-efbd-48a8-8697-fa3357e3ffb6"
+              LastKnownName="Actor"
+              LastKnownLocation="Package_0353.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6852aa9a-288d-496a-bd36-9b25f717be25"
+                  name="Actors"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3e0ccfe4-23ca-4a15-8219-9e0aa8b08ca3"
+                  name="Actor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="957ff5e0-0eef-4104-9324-bf9003e6e599"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f653f050-6f6f-4eb9-a80f-7e7c1dbf8036"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7f1bc078-9514-4797-9651-bc958e5f65ee"
+        name="Act" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="052d3259-5284-4d9d-b72f-fc6a486fb6a7"
+        name="InitiativeList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fb7283f3-2200-44e4-864f-a728346295ac"
+            isDerived="false"
+            sourceEndRoleName="InitiativeList"
+            targetEndRoleName="ActorList"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c476d1c0-5925-4b9f-933d-70a3918e8de1"
+              LastKnownName="ActorList"
+              LastKnownLocation="Package_2027.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c30a4be-97d5-4b94-9fac-e22e7717d110"
+                  name="InitiativeList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5305bb2-7ce1-4348-8be1-59652fd80f71"
+                  name="ActorList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5e59da3b-e3d6-4d48-b933-b47550e2cb98"
+            isDerived="false"
+            sourceEndRoleName="InitiativeList"
+            targetEndRoleName="InitiativeDefinition"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="7d495b7e-abee-4ebe-8687-303ffc63e833"
+              LastKnownName="InitiativeDefinition"
+              LastKnownLocation="Package_0356.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c27a82a1-ee72-4540-9aa4-d248d282bf89"
+                  name="InitiativeList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f81458a-670b-47eb-b1d7-75dd23fce499"
+                  name="InitiativeDefinition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

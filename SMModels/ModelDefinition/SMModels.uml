@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="171602e0-119a-4009-ab27-5883d16b993c"
+  name="SMModels" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="23614563-8815-4eef-b3c2-ee6598d2b50b"
+        name="GM"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7851f9d7-ec1c-4667-8b1f-0932fd6f78bc"
+            isDerived="false"
+            sourceEndRoleName="GM"
+            targetEndRoleName="Show hidden Items"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f0b5e9e6-3321-4b1c-bac4-6ed2ab39a39c"
+              LastKnownName="Show hidden Items"
+              LastKnownLocation="SMModels.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c043f80-4e95-451a-b953-c4db8cbd01c4"
+                  name="GM"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f26fd8b-ed0f-4eaa-8823-619ca5269216"
+                  name="Show hidden Items"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f50a3de9-0c9c-4108-ad0d-897734ce1504"
+        name="Players"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2a8d890c-74ec-409b-8462-dc6bfd445bc0"
+            isDerived="false"
+            sourceEndRoleName="Players"
+            targetEndRoleName="Only show visible areas"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6568c661-c346-43c3-bac2-67b38bd3c34b"
+              LastKnownName="Only show visible areas"
+              LastKnownLocation="SMModels.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51350ad8-1265-4973-b656-6eb90d073c85"
+                  name="Players"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea57f92a-eef4-4ae9-a708-46a399e14592"
+                  name="Only show visible areas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="10ecaa00-0173-4093-a52f-89e0b4fdcd47"
+        name="Image Viewer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="72981700-a375-41c2-9f53-5e14a567e7b8"
+        name="Show Map"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="10ecaa00-0173-4093-a52f-89e0b4fdcd47"
+            LastKnownName="Image Viewer"
+            LastKnownLocation="SMModels.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0b5e9e6-3321-4b1c-bac4-6ed2ab39a39c"
+        name="Show hidden Items"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5a0d2a28-3eb7-403e-be5d-016988610ade">
+            <useCaseMoniker
+              Id="72981700-a375-41c2-9f53-5e14a567e7b8"
+              LastKnownName="Show Map"
+              LastKnownLocation="SMModels.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="10ecaa00-0173-4093-a52f-89e0b4fdcd47"
+            LastKnownName="Image Viewer"
+            LastKnownLocation="SMModels.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6568c661-c346-43c3-bac2-67b38bd3c34b"
+        name="Only show visible areas"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="64304c56-39cb-4e53-9cb1-4cd1fb300b14">
+            <useCaseMoniker
+              Id="72981700-a375-41c2-9f53-5e14a567e7b8"
+              LastKnownName="Show Map"
+              LastKnownLocation="SMModels.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="10ecaa00-0173-4093-a52f-89e0b4fdcd47"
+            LastKnownName="Image Viewer"
+            LastKnownLocation="SMModels.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ad1e670e-dd58-42c8-9482-c269e10423c0"
+        LastKnownName="Items"
+        LastKnownLocation="Package_0352.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a63d7d84-b0f6-44f3-8051-aea41d259ef7"
+        LastKnownName="Entities"
+        LastKnownLocation="Package_0353.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="12050032-d343-461d-82d2-ac72959bbbda"
+        LastKnownName="Mechanics"
+        LastKnownLocation="Package_0356.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6f4c154a-c282-4f28-95f0-65e1df62fc62"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b159ab5c-2364-4bb3-b362-346cb1d19f5f"
+        LastKnownName="Visualization"
+        LastKnownLocation="Package_0404.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8c4d5f75-61c2-4557-b6bf-b93cfbb912a5"
+        LastKnownName="Organizational"
+        LastKnownLocation="Package_2027.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

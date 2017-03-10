@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Playground">
+  <useCaseModelRootMoniker Id="1fe80552-b093-4381-995c-c7f48cd74553" />
+  <nestedChildShapes>
+    <actorShape Id="71184da2-a6cd-4499-9359-206cfb98715e" absoluteBounds="2.375, 2.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="ca39772f-d004-47db-af9a-9b4055db2f85" LastKnownName="GM" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="85283b55-a8ae-435a-8b9f-f4993cb372c2" absoluteBounds="7.5, 2.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="4cfd4b60-04c1-48b5-a4e6-c34acb56d8b5" LastKnownName="Players" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="5fd2f2d8-81e5-433b-943d-b16498759853" absoluteBounds="3.75, 0.5, 3.125, 4.5" customColor="White">
+      <subsystemMoniker Id="bbb9e6e0-dd25-4f19-9a93-e1dfeb1ac4a3" LastKnownName="Image Viewer" />
+      <nestedChildShapes>
+        <useCaseShape Id="301da744-0467-463d-b417-c8a5fa30d8b9" absoluteBounds="4.75, 1.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="a76c5345-886b-41d0-a954-2c85da1e8f54" LastKnownName="Show Map" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="c8f513f7-2bd9-4257-8e9a-569b3ee964b2" absoluteBounds="4, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="a5c7e6a7-aab0-438a-9072-50a8408728f0" LastKnownName="Show hidden Items" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="bff96877-6005-4661-bd7a-a6cbf5da569d" absoluteBounds="5.625, 2, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="db517239-2252-4922-84cc-23028a56bba8" LastKnownName="Only show visible areas" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <extendConnector edgePoints="[(4.69695964928958 : 2.02021374249549); (5.05304035071042 : 1.60478625750451)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="2fc83cab-501e-4e7a-863a-b23e2558cb79" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="c8f513f7-2bd9-4257-8e9a-569b3ee964b2" />
+        <useCaseShapeMoniker Id="301da744-0467-463d-b417-c8a5fa30d8b9" />
+      </nodes>
+    </extendConnector>
+    <extendConnector edgePoints="[(5.90139320225002 : 2.02639320225002); (5.47360679774998 : 1.59860679774998)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="afbea81e-3352-412e-bbf2-147fc69a33bf" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="bff96877-6005-4661-bd7a-a6cbf5da569d" />
+        <useCaseShapeMoniker Id="301da744-0467-463d-b417-c8a5fa30d8b9" />
+      </nodes>
+    </extendConnector>
+    <useCaseAssociationConnector edgePoints="[(2.875 : 2.9); (4.10956559527849 : 2.40617376188861)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b69767c1-fa5e-4306-bd4c-ecb5b57dedd5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="71184da2-a6cd-4499-9359-206cfb98715e" />
+        <useCaseShapeMoniker Id="c8f513f7-2bd9-4257-8e9a-569b3ee964b2" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(7.5 : 2.88461538461538); (6.49240172231374 : 2.41957002568327)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b0ecd25a-9c00-4248-847e-264a32ec8ff3" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="85283b55-a8ae-435a-8b9f-f4993cb372c2" />
+        <useCaseShapeMoniker Id="bff96877-6005-4661-bd7a-a6cbf5da569d" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

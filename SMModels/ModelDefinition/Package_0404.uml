@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b159ab5c-2364-4bb3-b362-346cb1d19f5f"
+  name="Visualization" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="8925596c-a7b3-4741-a911-fdee39075bfa"
+        name="Marker"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bf3d5281-d425-4ae4-a75e-02b30af9caff"
+        name="Infobox"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="82e09f54-5dd1-4a9e-a05b-9191a6b30212"
+        name="CharacterSheet"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="37a25245-3fec-4109-9fa0-cddc06983b97"
+        name="CombatView"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c6c78660-0304-44d5-bd4b-5c5ea5c6eb45"
+        name="ShapeMarker"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0bb90dbc-24c6-4d61-bbb9-fd1fa4452b46"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dfa33eb4-71f4-47b8-b809-efd8de22bc6e"
+        name="ShapeMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="081cb938-9f15-49bb-842b-1fa55c60b87a">
+            <interfaceMoniker
+              Id="8925596c-a7b3-4741-a911-fdee39075bfa"
+              LastKnownName="Marker"
+              LastKnownLocation="Package_0404.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="007cd247-2636-4dae-b2b8-5c63f2369377"
+        name="ImageMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9f4da3f1-0138-4f7b-93bf-141e7bc2308b">
+            <interfaceMoniker
+              Id="8925596c-a7b3-4741-a911-fdee39075bfa"
+              LastKnownName="Marker"
+              LastKnownLocation="Package_0404.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a4128a6-910b-44e8-8ab8-0b4e507e11b7"
+        name="AreaMarker"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e5f12d47-7d50-477d-b7a0-a876c683f75a">
+            <interfaceMoniker
+              Id="8925596c-a7b3-4741-a911-fdee39075bfa"
+              LastKnownName="Marker"
+              LastKnownLocation="Package_0404.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
