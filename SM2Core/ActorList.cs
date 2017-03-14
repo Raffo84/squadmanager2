@@ -13,5 +13,10 @@ namespace SM2Core {
 			set {
 			}
 		}
-	}
+
+        public void addActor()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

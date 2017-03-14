@@ -11,9 +11,9 @@ namespace SM2Core {
 		DerivedValue DerivedValue { get; set; }
 		Traits Traits { get; set; }
 		CharacterSheet CharacterSheet { get; set; }
-		CombatView CombatView { get; set; }
 		Infobox Infobox { get; set; }
 		Marker Marker { get; set; }
 		Possession Possession { get; set; }
-	}
+        int Name { get; set; }
+    }
 }

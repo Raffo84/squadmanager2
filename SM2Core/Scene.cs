@@ -5,8 +5,9 @@ using System.Text;
 
 namespace SM2Core
 {
-    public interface CombatView
+    public interface Scene
     {
-        Scene Scene { get; set; }
+        MapList LevelList { get; set; }
+        MarkerPositionList MarkerList { get; set; }
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SM2Core {
-	public interface Marker
+namespace SM2Core
+{
+    public interface Door : Environment
     {
-        Infobox Infobox { get; set; }
     }
 }
