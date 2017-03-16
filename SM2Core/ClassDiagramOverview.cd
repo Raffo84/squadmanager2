@@ -173,8 +173,10 @@
       <Path>
         <Point X="15.5" Y="4" />
         <Point X="15.865" Y="4" />
-        <Point X="15.865" Y="4.594" />
-        <Point X="16.5" Y="4.594" />
+        <Point X="15.865" Y="4.61" />
+        <Point X="16.031" Y="4.61" Type="JumpStart" />
+        <Point X="16.198" Y="4.61" Type="JumpEnd" />
+        <Point X="16.5" Y="4.61" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="Attribute" Type="SM2Core.Attribute" FixedFromPoint="true" FixedToPoint="true">
@@ -217,6 +219,8 @@
     <AssociationLine Name="Possession" Type="SM2Core.Possession" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="15.5" Y="3.625" />
+        <Point X="16.031" Y="3.625" Type="JumpStart" />
+        <Point X="16.198" Y="3.625" Type="JumpEnd" />
         <Point X="16.354" Y="3.625" />
         <Point X="16.354" Y="2.5" />
         <Point X="19.438" Y="2.5" />
@@ -277,7 +281,7 @@
   <Interface Name="SM2Core.Faction">
     <Position X="16.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Faction.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -321,7 +325,9 @@
       <Path>
         <Point X="19.305" Y="3.618" />
         <Point X="19.305" Y="5.938" />
-        <Point X="14.833" Y="5.937" Type="JumpStart" />
+        <Point X="16.198" Y="5.938" Type="JumpStart" />
+        <Point X="16.031" Y="5.938" Type="JumpEnd" />
+        <Point X="14.833" Y="5.938" Type="JumpStart" />
         <Point X="14.667" Y="5.938" Type="JumpEnd" />
         <Point X="9.25" Y="5.938" />
       </Path>

@@ -14,6 +14,6 @@ namespace SM2Core {
 		Infobox Infobox { get; set; }
 		Marker Marker { get; set; }
 		Possession Possession { get; set; }
-        int Name { get; set; }
-    }
+		string Name { get; set; }
+	}
 }
