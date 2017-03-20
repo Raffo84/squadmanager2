@@ -62,6 +62,7 @@
     <Compile Include="Dice.cs" />
     <Compile Include="Door.cs" />
     <Compile Include="Effect.cs" />
+    <Compile Include="Energy.cs" />
     <Compile Include="Enviorment.cs" />
     <Compile Include="Faction.cs" />
     <Compile Include="ImageMarker.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="ShapeMarker.cs" />
     <Compile Include="Sight.cs" />
     <Compile Include="Skill.cs" />
+    <Compile Include="SoundManager.cs" />
     <Compile Include="TimeUnit.cs" />
     <Compile Include="Tool.cs" />
     <Compile Include="Traits.cs" />

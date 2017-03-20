@@ -9,5 +9,6 @@ namespace SM2Core
     {
         MapList LevelList { get; set; }
         MarkerPositionList MarkerList { get; set; }
-    }
+		Map Map { get; set; }
+	}
 }

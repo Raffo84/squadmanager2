@@ -4,6 +4,6 @@ using System.Linq;
 using System.Text;
 
 namespace SM2Core {
-	public interface CombatView: Infobox {
+	public class SoundManager {
 	}
 }

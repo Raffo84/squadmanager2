@@ -31,16 +31,13 @@ namespace SM2Core
             }
         }
 
-        public CombatView CombatView
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+		public SoundManager SoundManager {
+			get {
+				throw new System.NotImplementedException();
+			}
 
-            set
-            {
-            }
-        }
-    }
+			set {
+			}
+		}
+	}
 }
