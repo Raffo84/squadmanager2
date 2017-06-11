@@ -1,556 +1,505 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Intended for things like knowledge, experiences, learned spells, fighting moves etc.">
-    <Position X="26.706" Y="4.396" Height="0.75" Width="1.7" />
+    <Position X="26.644" Y="3.677" Height="0.75" Width="1.7" />
   </Comment>
   <Comment CommentText="Marker are movable Objects on the Map">
-    <Position X="8.969" Y="6.057" Height="0.51" Width="1.377" />
+    <Position X="8.5" Y="5.734" Height="0.51" Width="1.377" />
   </Comment>
   <Comment CommentText="Enviornment are static Objects on the Map">
     <Position X="4" Y="6.38" Height="0.583" Width="1.377" />
   </Comment>
   <Comment CommentText="Intended for consumable, but abstract things, like health, magical energy etc.">
-    <Position X="23.656" Y="5.01" Height="0.75" Width="1.7" />
+    <Position X="23.646" Y="3.531" Height="0.75" Width="1.7" />
   </Comment>
-  <Class Name="SM2Core.ShapeMarker">
-    <Position X="7.75" Y="6.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ShapeMarker.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="SM2Core.ImageMarker">
-    <Position X="7.75" Y="7.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ImageMarker.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="SM2Core.AreaMarker">
-    <Position X="7.75" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AreaMarker.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="SM2Core.ActorList">
+  <Comment CommentText="&quot;Scenes&quot; will be the &quot;tabs&quot; of the mapview">
+    <Position X="5.844" Y="8.573" Height="0.51" Width="1.471" />
+  </Comment>
+  <Class Name="SM2Core.Organization.ActorList">
     <Position X="10.5" Y="9" Width="1.5" />
-    <AssociationLine Name="Actor" Type="SM2Core.Actor" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="11.125" Y="9" />
-        <Point X="11.125" Y="8.625" />
-        <Point X="13.917" Y="8.625" Type="JumpStart" />
-        <Point X="14.083" Y="8.625" Type="JumpEnd" />
-        <Point X="14.5" Y="8.625" />
-        <Point X="14.5" Y="4.603" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ActorList.cs</FileName>
+      <FileName>Organization\ActorList.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Actor" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="SM2Core.InitiativeList">
+  <Class Name="SM2Core.Organization.InitiativeList">
     <Position X="10.5" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAA=</HashCode>
-      <FileName>InitiativeList.cs</FileName>
+      <FileName>Organization\InitiativeList.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ActorList" />
       <Property Name="InitiativeDefinition" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="SM2Core.Dice">
+  <Class Name="SM2Core.GameMechanics.BaseDie">
     <Position X="15.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dice.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\BaseDie.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SM2Core.D4">
-    <Position X="12.5" Y="13.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D4.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D6">
-    <Position X="14.25" Y="13.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D6.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D8">
-    <Position X="16.25" Y="13.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D8.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D10">
-    <Position X="18" Y="13.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D10.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D12">
-    <Position X="13" Y="14.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D12.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D20">
-    <Position X="14.75" Y="14.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D20.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D30">
-    <Position X="16.5" Y="14.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D30.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.D100">
-    <Position X="18.25" Y="14.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>D100.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SM2Core.CoreControler">
+  <Class Name="SM2Core.Organization.CoreController">
     <Position X="9.5" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>CoreControler.cs</FileName>
+      <FileName>Organization\CoreController.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ActorList" />
-      <Property Name="SceneList" />
       <Property Name="SoundManager" />
+      <Property Name="SceneList" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="SM2Core.SceneList">
+  <Class Name="SM2Core.Scenes.SceneList">
     <Position X="5.5" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SceneList.cs</FileName>
+      <FileName>Scenes\SceneList.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Scene" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="SM2Core.MarkerPositionList">
-    <Position X="5.5" Y="7" Width="1.5" />
+  <Class Name="SM2Core.Visualization.ShapeMarker">
+    <Position X="7.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
-      <FileName>MarkerList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\ShapeMarker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SM2Core.Visualization.ImageMarker">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\ImageMarker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SM2Core.Visualization.AreaMarker">
+    <Position X="7.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\AreaMarker.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="MarkerPosition" />
+      <Property Name="Infobox" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SM2Core.SoundManager">
+  <Class Name="SM2Core.Organization.SoundManager">
     <Position X="9.5" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SoundManager.cs</FileName>
+      <FileName>Organization\SoundManager.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="SM2Core.Actor">
+  <Class Name="SM2Core.GameMechanics.D4">
+    <Position X="12.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D6">
+    <Position X="14.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D6.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D8">
+    <Position X="16.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D8.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D10">
+    <Position X="18" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D10.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D12">
+    <Position X="13" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D12.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D20">
+    <Position X="14.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D20.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D30">
+    <Position X="16.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D30.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.D100">
+    <Position X="18.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\D100.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SM2Core.Scenes.Map" Collapsed="true">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\Map.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Environment" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SM2Core.Scenes.MarkerList" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\MarkerList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Markers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SM2Core.GameMechanics.RandomnessProvider" Collapsed="true">
+    <Position X="14.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAAAAAAAAAAAIAAAAAIAAQAIAAAQAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\RandomnessProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SM2Core.Entities.Actor">
     <Position X="13.75" Y="3.5" Width="1.5" />
-    <AssociationLine Name="Faction" Type="SM2Core.Faction" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Faction" Type="SM2Core.Entities.Faction" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="15.25" Y="4.25" />
-        <Point X="15.865" Y="4.25" />
+        <Point X="15.25" Y="3.931" />
+        <Point X="15.865" Y="3.931" />
         <Point X="15.865" Y="4.61" />
         <Point X="16.031" Y="4.61" Type="JumpStart" />
         <Point X="16.198" Y="4.61" Type="JumpEnd" />
         <Point X="17" Y="4.61" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="Attribute" Type="SM2Core.Attribute" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="DerivedValue" Type="SM2Core.Entities.DerivedValue" ManuallyRouted="true">
       <Path>
-        <Point X="13.75" Y="3.75" />
-        <Point X="12.25" Y="3.75" />
-        <Point X="12.25" Y="2.368" />
+        <Point X="15.25" Y="3.589" />
+        <Point X="15.875" Y="3.589" />
+        <Point X="15.875" Y="0.841" />
+        <Point X="15.5" Y="0.841" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="DerivedValue" Type="SM2Core.DerivedValue" ManuallyRouted="true">
+    <AssociationLine Name="Possession" Type="SM2Core.Items.Possession" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="15.25" Y="3.656" />
-        <Point X="15.875" Y="3.656" />
-        <Point X="15.875" Y="0.934" />
-        <Point X="15.5" Y="0.934" />
+        <Point X="15.25" Y="3.789" />
+        <Point X="16.031" Y="3.789" Type="JumpStart" />
+        <Point X="16.198" Y="3.789" Type="JumpEnd" />
+        <Point X="16.354" Y="3.789" />
+        <Point X="16.354" Y="1.969" />
+        <Point X="20.188" Y="1.969" />
+        <Point X="20.188" Y="2.25" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="CharacterSheet" Type="SM2Core.CharacterSheet" FixedToPoint="true">
+    <AssociationLine Name="CharacterSheet" Type="SM2Core.Visualization.CharacterSheet" FixedToPoint="true">
       <Path>
-        <Point X="14.156" Y="3.5" />
-        <Point X="14.156" Y="2.868" />
-        <Point X="12.333" Y="2.868" Type="JumpStart" />
-        <Point X="12.167" Y="2.868" Type="JumpEnd" />
-        <Point X="10.875" Y="2.868" />
-        <Point X="10.875" Y="1.938" />
-        <Point X="10.5" Y="1.938" />
+        <Point X="13.75" Y="3.688" />
+        <Point X="11.75" Y="3.688" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="Infobox" Type="SM2Core.Infobox" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Infobox" Type="SM2Core.Visualization.Infobox" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="14.125" Y="4.603" />
-        <Point X="14.125" Y="4.978" />
-        <Point X="14.083" Y="4.978" Type="JumpStart" />
-        <Point X="13.917" Y="4.978" Type="JumpEnd" />
-        <Point X="10.875" Y="4.978" />
-        <Point X="10.875" Y="2.632" />
-        <Point X="10.5" Y="2.632" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="Marker" Type="SM2Core.Marker" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="15.125" Y="4.603" />
-        <Point X="15.125" Y="5.75" />
-        <Point X="14.583" Y="5.75" Type="JumpStart" />
-        <Point X="14.417" Y="5.75" Type="JumpEnd" />
-        <Point X="14.083" Y="5.75" Type="JumpStart" />
-        <Point X="13.917" Y="5.75" Type="JumpEnd" />
-        <Point X="9.25" Y="5.75" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="Possession" Type="SM2Core.Possession" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="15.25" Y="3.875" />
-        <Point X="16.031" Y="3.875" Type="JumpStart" />
-        <Point X="16.198" Y="3.875" Type="JumpEnd" />
-        <Point X="16.354" Y="3.875" />
-        <Point X="16.354" Y="2.5" />
-        <Point X="19.438" Y="2.5" />
-        <Point X="19.438" Y="2.75" />
+        <Point X="14.125" Y="4.853" />
+        <Point X="13.958" Y="4.853" Type="JumpStart" />
+        <Point X="13.792" Y="4.853" Type="JumpEnd" />
+        <Point X="13.5" Y="4.853" />
+        <Point X="13.5" Y="4.382" />
+        <Point X="11.75" Y="4.382" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>EAAAAwAAAAACAAAAgAAAAQQAgAACAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>Actor.cs</FileName>
+      <FileName>Entities\Actor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Faction" />
-      <Property Name="Attribute" />
       <Property Name="Skill" />
       <Property Name="DerivedValue" />
       <Property Name="Traits" />
+      <Property Name="Attribute" />
+      <Property Name="Possession" />
       <Property Name="CharacterSheet" />
       <Property Name="Infobox" />
       <Property Name="Marker" />
-      <Property Name="Possession" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Attribute">
-    <Position X="11.5" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Attribute.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Skill">
-    <Position X="14" Y="1.75" Width="1.5" />
+  <Interface Name="SM2Core.Entities.Skill">
+    <Position X="14" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Skill.cs</FileName>
+      <FileName>Entities\Skill.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Attribute" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.DerivedValue">
+  <Interface Name="SM2Core.Entities.DerivedValue">
     <Position X="14" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DerivedValue.cs</FileName>
+      <FileName>Entities\DerivedValue.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Attribute" />
       <Property Name="Skill" />
+      <Property Name="Attribute" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Traits">
+  <Interface Name="SM2Core.Entities.Traits">
     <Position X="17" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Traits.cs</FileName>
+      <FileName>Entities\Traits.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.Faction">
+  <Interface Name="SM2Core.Entities.Faction">
     <Position X="17" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Faction.cs</FileName>
+      <FileName>Entities\Faction.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.CharacterSheet">
-    <Position X="9" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CharacterSheet.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.CombatView">
-    <Position X="9" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CombatView.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Infobox">
-    <Position X="9" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Infobox.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Marker">
+  <Interface Name="SM2Core.Visualization.Marker">
     <Position X="7.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Marker.cs</FileName>
+      <FileName>Visualization\Marker.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Infobox" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Possession">
-    <Position X="19" Y="2.75" Width="1.5" />
-    <AssociationLine Name="Marker" Type="SM2Core.Marker" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="19.305" Y="3.618" />
-        <Point X="19.305" Y="5.938" />
-        <Point X="16.198" Y="5.938" Type="JumpStart" />
-        <Point X="16.031" Y="5.938" Type="JumpEnd" />
-        <Point X="14.583" Y="5.938" Type="JumpStart" />
-        <Point X="14.417" Y="5.938" Type="JumpEnd" />
-        <Point X="14.083" Y="5.938" Type="JumpStart" />
-        <Point X="13.917" Y="5.938" Type="JumpEnd" />
-        <Point X="9.25" Y="5.938" />
-      </Path>
-    </AssociationLine>
+  <Interface Name="SM2Core.Items.Possession">
+    <Position X="19.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Possession.cs</FileName>
+      <FileName>Items\Possession.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Marker" />
       <Property Name="Modifier" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Item">
-    <Position X="20.25" Y="4.25" Width="1.5" />
-    <InheritanceLine Type="SM2Core.Possession" FixedFromPoint="true">
-      <Path>
-        <Point X="20.312" Y="3.618" />
-        <Point X="20.312" Y="3.875" />
-        <Point X="21" Y="3.875" />
-        <Point X="21" Y="4.25" />
-      </Path>
-    </InheritanceLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Money">
-    <Position X="22" Y="4.25" Width="1.5" />
-    <InheritanceLine Type="SM2Core.Possession" FixedFromPoint="true">
-      <Path>
-        <Point X="20.312" Y="3.618" />
-        <Point X="20.312" Y="3.875" />
-        <Point X="22.75" Y="3.875" />
-        <Point X="22.75" Y="4.25" />
-      </Path>
-    </InheritanceLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Money.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.AbstractItem">
-    <Position X="25.5" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbstractItem.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Tool">
-    <Position X="20.25" Y="6" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Tool.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Armor">
-    <Position X="22.25" Y="6" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Armor.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Weapon">
+  <Interface Name="SM2Core.Items.Weapon">
     <Position X="21.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Weapon.cs</FileName>
+      <FileName>Items\Weapon.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Ammunition" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Consumable">
-    <Position X="23.25" Y="7.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Consumable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Ammunition">
-    <Position X="23.25" Y="8.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Ammunition.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.RollDefinition">
+  <Interface Name="SM2Core.GameMechanics.RollDefinition">
     <Position X="15.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>RollDefinition.cs</FileName>
+      <FileName>GameMechanics\RollDefinition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Dice" />
       <Property Name="Possession" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Modifier">
-    <Position X="17.5" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Modifier.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.Effect">
+  <Interface Name="SM2Core.GameMechanics.Effect">
     <Position X="17.5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Effect.cs</FileName>
+      <FileName>GameMechanics\Effect.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Duration" />
       <Property Name="Modifier" />
+      <Property Name="Duration" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.TimeUnit">
-    <Position X="17.5" Y="11.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>TimeUnit.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="SM2Core.InitiativeDefinition">
+  <Interface Name="SM2Core.GameMechanics.InitiativeDefinition">
     <Position X="12.75" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>InitiativeDefinition.cs</FileName>
+      <FileName>GameMechanics\InitiativeDefinition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="RollDefinition" />
       <Property Name="Actor" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Scene">
+  <Interface Name="SM2Core.Scenes.Scene">
     <Position X="5.5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
-      <FileName>Scene.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\Scene.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="MarkerList" />
       <Property Name="Map" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Map">
-    <Position X="3" Y="7.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>gAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
-      <FileName>Level.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Enviorment" />
-    </ShowAsAssociation>
-  </Interface>
-  <Interface Name="SM2Core.MarkerPosition">
+  <Interface Name="SM2Core.Visualization.MarkerPosition">
     <Position X="5.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MarkerPosition.cs</FileName>
+      <FileName>Visualization\MarkerPosition.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Marker" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Environment">
+  <Interface Name="SM2Core.Scenes.Environment">
     <Position X="3" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAA=</HashCode>
-      <FileName>Enviorment.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\Enviorment.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Cover" />
-      <Property Name="Sight" />
       <Property Name="Infobox" />
     </ShowAsAssociation>
   </Interface>
-  <Interface Name="SM2Core.Wall">
+  <Interface Name="SM2Core.Scenes.Wall">
     <Position X="0.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Wall.cs</FileName>
+      <FileName>Scenes\Wall.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.Door">
+  <Interface Name="SM2Core.Scenes.Door">
     <Position X="0.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Door.cs</FileName>
+      <FileName>Scenes\Door.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.Cover">
+  <Interface Name="SM2Core.Scenes.Cover">
     <Position X="0.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cover.cs</FileName>
+      <FileName>Scenes\Cover.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.Sight">
+  <Interface Name="SM2Core.Scenes.Sight">
     <Position X="0.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Sight.cs</FileName>
+      <FileName>Scenes\Sight.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SM2Core.Energy">
+  <Interface Name="SM2Core.GameMechanics.TimeUnit">
+    <Position X="17.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\TimeUnit.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.GameMechanics.Modifier">
+    <Position X="17.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameMechanics\Modifier.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Item">
+    <Position X="20.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Money">
+    <Position X="22" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Money.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Energy">
     <Position X="23.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Energy.cs</FileName>
+      <FileName>Items\Energy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.AbstractItem">
+    <Position X="25.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\AbstractItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Tool">
+    <Position X="20.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Tool.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Armor">
+    <Position X="22.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Consumable">
+    <Position X="23.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Consumable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Items.Ammunition">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Ammunition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Entities.Attribute">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Visualization.CharacterSheet">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\CharacterSheet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Visualization.Infobox">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\Infobox.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SM2Core.Visualization.CombatView">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visualization\CombatView.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
