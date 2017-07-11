@@ -5,7 +5,9 @@ using System.Text;
 
 namespace SM2Core.GameMechanics {
 	public interface Effect {
-		Modifier Modifier { get; set; }
-		TimeUnit Duration { get; set; }
+		String Name { get; set; }
+		EffectSource Source { get; set; }
+		List<Modifier> Modifiers { get; set; }
+		TimeFrame Duration { get; set; }
 	}
 }

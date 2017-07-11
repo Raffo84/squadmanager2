@@ -5,5 +5,6 @@ using System.Text;
 
 namespace SM2Core.GameMechanics {
 	public interface Modifier {
+		int Value { get; set; }
 	}
 }

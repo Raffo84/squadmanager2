@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SM2Core.Entities {
 	public interface DerivedValue {
-		Skill Skill { get; set; }
-		Attribute Attribute { get; set; }
+		List<Skill> Skills { get; set; }
+		List<Attribute> Attributes { get; set; }
 	}
 }

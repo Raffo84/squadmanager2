@@ -4,6 +4,6 @@ using System.Linq;
 using System.Text;
 
 namespace SM2Core.Entities {
-	public interface Traits {
+	public interface Traits: GameMechanics.EffectSource {
 	}
 }

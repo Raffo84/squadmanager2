@@ -38,6 +38,7 @@
     <None Include="ClassDiagramOverview.cd" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameMechanics\EffectSource.cs" />
     <Compile Include="GameMechanics\RandomnessProvider.cs" />
     <Compile Include="Items\AbstractItem.cs" />
     <Compile Include="Entities\Actor.cs" />
@@ -86,7 +87,7 @@
     <Compile Include="Scenes\Sight.cs" />
     <Compile Include="Entities\Skill.cs" />
     <Compile Include="Organization\SoundManager.cs" />
-    <Compile Include="GameMechanics\TimeUnit.cs" />
+    <Compile Include="GameMechanics\TimeFrame.cs" />
     <Compile Include="Items\Tool.cs" />
     <Compile Include="Entities\Traits.cs" />
     <Compile Include="Scenes\Wall.cs" />
